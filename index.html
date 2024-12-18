@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menuka</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <!--font awasome cdn font icon cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fa-solid fa-m"></i>
+                    <div class="logo-text">Menuka Sankalpa</div>
+                </div>
+                <img src="" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class='bx bx-window-close' onclick="closemenu()"></i>
+                </ul>
+                <i class='bx bx-menu' onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Menuka</span><br>Sankalpa From Sri Lanka</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/car-1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>"I am a dedicated software engineer with a passion for designing and developing efficient, user-centric solutions. With expertise in programming languages like Python and Java, I specialize in creating innovative applications and seamless user experiences. I thrive on problem-solving, continuous learning, and leveraging technology to make a meaningful impact."</p>
+                    
+                    <!-- Tab Links -->
+                    <div class="tab-title">
+                        <p class="tab-links active-links" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    
+                    <!-- Tab Content -->
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing UI/UX interfaces</li>
+                            <li><span>Web development</span><br>Create web applications </li>
+                            <li><span>App development</span><br>Design and create web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>"Proficient in self-learning UI/UX design, with hands-on experience creating intuitive user interfaces and enhancing user experiences for various projects. Skilled in design tools like Figma and Adobe XD, and capable of applying design principles to improve functionality and aesthetics."</li>
+                            <li><span>Web development</span><br>"Experienced in web development with a strong foundation in front-end and back-end technologies. Skilled in HTML, CSS, JavaScript, and frameworks like React and Node.js. Able to create responsive, user-friendly websites and web applications, focusing on performance, scalability, and seamless user experiences."</li>
+                            <li><span>App development</span><br>"Experienced in app development, with expertise in building mobile applications using frameworks like React Native and Flutter. Skilled in designing user-friendly interfaces and implementing robust functionality for both iOS and Android platforms. Focused on creating high-performance, responsive apps that deliver seamless user experiences."</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>Diploma</span><br>2019/2020 - Assured Diploma in Technology -Esoft Metro Collage. <br> 2019/2020 - Assured Diploma in English-Esoft Metro Collage. </li>
+                            <li><span>Higher National Diploma</span><br>2023/2025 - Higher National Diploma in computing.</li>
+                            <li><span>Degree</span><br>Still learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class='bx bx-code-alt'></i>
+                <h2>Web Design</h2>
+                <p>A web designer creates the look, layout, and user experience of a website, ensuring it’s visually appealing, user-friendly, and matches the brand.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class='bx bxs-color'></i>
+                <h2>UI/UX Design</h2>
+                <p>UI/UX design enhances user interaction with a product, combining attractive visuals (UI) and seamless usability (UX).</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class='bx bxl-python'></i>
+                <h2>App Design</h2>
+                <p>App design involves creating the visual layout (UI) and user experience (UX) of a mobile or web application, ensuring it is functional, appealing, and easy to navigate.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Projects-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/blog-1.jpg" alt="">
+                <div class="layer">
+                    <h3>Social meadia app</h3>
+                    <p>nice to meet you set abnd haf will call you at night so this is the latest my work of all time.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/blog-2.jpg" alt="">
+                <div class="layer">
+                    <h3>Social meadia app</h3>
+                    <p>nice to meet you set abnd haf will call you at night so this is the latest my work of all time.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/blog-3.jpg" alt="">
+                <div class="layer">
+                    <h3>Social meadia app</h3>
+                    <p>nice to meet you set abnd haf will call you at night so this is the latest my work of all time.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+<!--contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class='bx bx-send' ></i>menuka.sankalpa@gmail.com</p>
+                <p><i class='bx bx-phone'></i>0703492311</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/menuka.sankalpa.96?mibextid=ZbWKwL"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="http://wa.me/+940703492311"><i class='bx bxl-whatsapp' ></i></a>
+                    <a href="https://www.instagram.com/men_u___/profilecard/?igsh=cXJsNzFjaGM5ajV5"><i class='bx bxl-instagram' ></i></a>
+                    <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://github.com/MenukaSankalpa/MenukaSankalpa.git"><i class='bx bxl-github' ></i></a>
+                </div>    
+                <a href="img/Menuka Sankalpa CV.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form action="" name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Massage"></textarea>
+                    <button type="submit" submit class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <p>Copyright @Menuka.Made with Skill <i class='bx bxs-heart bx-tada' ></i></p>
+    </div>
+</div>
+    <script src="script.js"></script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxcS0eVihcwr7YzOK0e_GMANQdXBKsTdcYYcQ9kYZfR0Lb3MxmZTU4d6HO7Yeihh0cf/exec'
+    const form = document.forms['submit-to-google-sheet'] 
+    const msg = document.getElementById("msg")
+
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Massage Sent Successfully.Thank You!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+    
+</body>
+</html>
+
+
